@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import WhyMe from './components/WhyMe';
 import Benefits from './components/Benefits';
-import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 
@@ -19,7 +18,6 @@ export default function App() {
         <About />
         <WhyMe />
         <Benefits />
-        <Portfolio />
       </main>
       <Footer />
       <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />

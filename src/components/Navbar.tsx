@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import logoImage from '../assets/images/web_builders_logo_1780131687033.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +18,6 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Services', href: '#services' },
     { name: 'Benefits', href: '#benefits' },
-    { name: 'Portfolio', href: '#portfolio' },
     { name: 'Contact', href: '#footer' },
   ];
 
@@ -40,14 +40,14 @@ export default function Navbar() {
     >
       <div className="max-w-[1200px] w-full mx-auto px-5 flex items-center justify-between">
         <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="font-display font-semibold text-[17px] md:text-lg tracking-tight text-white flex items-center space-x-2.5 hover:opacity-80 transition-opacity">
-          <span className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-blue-600/10 flex items-center justify-center border border-blue-500/20 overflow-hidden p-1.5">
+          <span className="w-8 h-8 md:w-9 md:h-9 rounded-[8px] flex items-center justify-center overflow-hidden">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Outline_Map_of_India.svg" 
-              alt="India Map" 
-              className="w-full h-full object-contain invert opacity-80"
+              src={logoImage} 
+              alt="Web Builders Logo" 
+              className="w-full h-full object-cover"
             />
           </span>
-          <span>.ABOUT US</span>
+          <span>WEB BUILDERS</span>
         </a>
 
         {/* Desktop Nav */}

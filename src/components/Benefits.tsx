@@ -25,7 +25,7 @@ export default function Benefits() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
           {benefits.map((benefit, i) => (
-            <div className="flex flex-col items-center p-6 md:p-8 bg-slate-900/30 border border-slate-800/80 rounded-[16px] md:rounded-[20px] hover:bg-slate-800/50 hover:border-slate-700 transition-colors duration-300 text-center">
+            <div key={i} className="flex flex-col items-center p-6 md:p-8 bg-slate-900/30 border border-slate-800/80 rounded-[16px] md:rounded-[20px] hover:bg-slate-800/50 hover:border-slate-700 transition-colors duration-300 text-center">
               <div className="text-blue-500 mb-4 md:mb-5 bg-blue-500/5 p-3 rounded-[14px] border border-blue-500/10">
                 {benefit.icon}
               </div>
